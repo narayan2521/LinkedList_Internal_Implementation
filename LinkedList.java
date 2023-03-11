@@ -39,7 +39,6 @@ public class LinkedList{
             first=new Node(ele,first);
             p++;
         }
-        Node curr=first;
         for(int i=1;i<index;i++)
         {
             curr=curr.next;
