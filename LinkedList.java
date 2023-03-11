@@ -17,4 +17,7 @@ public class LinkedList{
         curr=new Node(ele,null);
         p++;
     }
+    public int size(){
+        return p;
+    }
 }
