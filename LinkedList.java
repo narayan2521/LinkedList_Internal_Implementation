@@ -20,4 +20,15 @@ public class LinkedList{
     public int size(){
         return p;
     }
+    public Object get(int index)
+    {
+        if(index<=-1 || index>=size()) throw new IndexOutOfBoundsException();
+        Node curr=first;
+        if(index==0) return first.ele;
+        for(int i=1;i<=index;i++)
+        {
+            curr=curr.next;
+        }
+        return curr.ele;
+    }
 }
