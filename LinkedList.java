@@ -31,4 +31,20 @@ public class LinkedList{
         }
         return curr.ele;
     }
+    public void add(int index,Object ele)
+    {
+         if(index<=-1 || index>=size()) throw new IndexOutOfBoundsException();
+        Node curr=first;
+        if(index==0){
+            first=new Node(ele,first);
+            p++;
+        }
+        Node curr=first;
+        for(int i=1;i<index;i++)
+        {
+            curr=curr.next;
+        }
+        curr=new Node(ele,curr.next);
+        p++;
+    } 
 }
